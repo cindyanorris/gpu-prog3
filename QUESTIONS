@@ -1,0 +1,52 @@
+If necessary, compile your code with the optimizations turned on by 
+uncommenting the appropriate NVCCFLAGS option in the makefile, commenting
+out the other NVCCFLAGS, typing make clean, and then make.
+
+1. Run the generate and greyscalar programs on various values of width and
+height to find values in which the CPU greyscalar is faster than the GPU
+greyscalar.  Give the width, heigh, and output for one case in which the
+CPU performance is better.
+width:
+height:
+output of greyscalar:
+
+2. Run the generate and greyscalar programs on various values of width and
+height to find values in which the GPU greyscalar is faster than the CPU
+greyscalar. Give the width, heigh, and output for one case in which the
+GPU performance is better.
+width:
+height:
+output of greyscalar:
+
+3. If you used the code in the book to write your gpu code then you defined
+thread blocks to be of size 16 by 16.  Consider the pixel at location
+x = 8 and y = 8 in an image of size 1000 by 2000 (width by height; i.e. x by y). 
+Recall a pixel consists of three bytes (R, G, and B).
+
+a. What are the identifiers of the block and thread that will operate
+on this pixel?
+blockIdx.x:
+blockIdx.y:
+threadIdx.x:
+threadIdx.y:
+
+b. What is the index into the Pin array for the R byte of the pixel?
+Pin index:
+
+c. What is the index into the Pout array for the single greyscale byte?
+Pout index:
+
+4. Repeat problem 4 with the pixel at location x = 200 and y = 200.
+Assume again that the image is of size 1000 by 2000
+
+a.
+blockIdx.x:
+blockIdx.y:
+threadIdx.x:
+threadIdx.y:
+
+b.
+Pin index:
+
+c.
+Pout index:
